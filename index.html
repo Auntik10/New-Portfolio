@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Auntik Krishna Sarker — Portfolio</title>
+  <meta name="description" content="Auntik Krishna Sarker — Full-Stack Web Developer. Portfolio, projects and contact." />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="brand">Auntik K. Sarker</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="downloadResumeBtn" class="btn small">Download Resume</button>
+        <button id="themeToggle" class="btn-icon" title="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-container container">
+      <div class="hero-card">
+
+        <div class="hero-photo">
+          <img id="profilePhoto" src="./pofile.jpg" alt="Auntik Krishna Sarker" />
+        </div>
+
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="accent">Auntik Krishna Sarker</span></h1>
+          <p class="lead">
+            I build intelligent, efficient, and scalable machine learning solutions. I specialize in creating models and pipelines for NLP, computer vision, and predictive analytics with a focus on clean, maintainable code and real-world impact.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Hire Me</a>
+          </div>
+
+          <div class="hero-meta">
+            <div><strong>Location</strong><span>Dhaka, Bangladesh</span></div>
+            <div><strong>Email</strong><span><a href="mailto:sarker2205101598@diu.edu.bd">sarker2205101598@diu.edu.bd</a></span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2>About</h2>
+    <p>
+      I am Auntik Krishna Sarker, a passionate Machine Learning Engineer with expertise in building intelligent systems that solve real-world problems. I specialize in developing and deploying machine learning and deep learning models, including NLP, computer vision, and predictive analytics.
+
+With a strong foundation in Python, TensorFlow, PyTorch, and Scikit-learn, I design end-to-end ML pipelines, from data preprocessing and feature engineering to model optimization and deployment. I have hands-on experience in building scalable APIs, MLOps workflows, and integrating AI solutions into web applications.
+    </p>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar"><span data-width="92%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">TensorFlow</div>
+        <div class="skill-bar"><span data-width="88%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Machine Learning & Data Analysis</div>
+        <div class="skill-bar"><span data-width="83%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Model Deployment</div>
+        <div class="skill-bar"><span data-width="95%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="project" data-tilt>
+        <div class="project-inner">
+          <img class="project-media" src="./project1.jpg" alt="ML Image Classifier project screenshot" loading="lazy">
+          <h3>ML Image Classifier</h3>
+          <p>Deep-learning image classification model using TensorFlow & Keras to identify and categorize images with high accuracy.</p>
+        </div>
+      </article>
+
+      <article class="project" data-tilt>
+        <div class="project-inner">
+          <img class="project-media" src="./project2.jpg" alt="Sentiment Analyzer project screenshot" loading="lazy">
+          <h3>Sentiment Analyzer</h3>
+          <p>Natural Language Processing (NLP) project analyzing social media and customer reviews to detect sentiment trends using Python & HuggingFace Transformers.</p>
+        </div>
+      </article>
+
+      <article class="project" data-tilt>
+        <div class="project-inner">
+          <img class="project-media" src="./project3.jpg" alt="Recommendation System project screenshot" loading="lazy">
+          <h3>Recommendation System</h3>
+          <p>Built a personalized recommendation engine for products and content using collaborative filtering, matrix factorization, and Python.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section container">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="item">
+        <h4>Machine Learning Intern — Acme Co.</h4>
+        <span class="time">2024 — Present</span>
+        <p>Developed and optimized machine learning models for image classification and NLP tasks.</p>
+
+<p>Built end-to-end ML pipelines: data preprocessing → model training → evaluation.</p>
+
+<p>Assisted in deploying models as APIs for internal testing.</p>
+      </div>
+
+      <div class="item">
+        <h4>Freelance / Personal Projects</h4>
+        <span class="time">2023 — Present</span>
+        <p>Created multiple machine learning applications, such as recommendation systems and image classifiers.</p>
+
+<p>Deployed models using Flask, Streamlit, and Docker.</p>
+
+<p>Shared projects on GitHub to build portfolio and showcase skills.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <input name="name" type="text" placeholder="Your name" required>
+      <input name="email" type="email" placeholder="your@email.com" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+      <div class="form-row">
+        <button type="submit" class="btn">Send</button>
+        <button type="button" id="mailtoBtn" class="btn ghost">Open Email</button>
+      </div>
+
+      <p id="contactResponse"></p>
+    </form>
+
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Auntik Krishna Sarker — Built with care.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
